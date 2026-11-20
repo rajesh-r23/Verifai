@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | VERIFAI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 54" fill="none">
+          <path d="M24 3 5 10v15c0 13 8 21 19 26 11-5 19-13 19-26V10L24 3Z" fill="#1f5fe0"/>
+          <path d="M24 9 11 14v11c0 9.5 5.5 15.500 13 19.500C31.500 40.500 37 34.500 37 25V14L24 9Z" fill="#eaf1ff"/>
+          <path d="m17 26 5 5 10-11" stroke="#1f5fe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="logo-title">VERIFAI</span>
+          <span class="logo-sub">Think Safe. Stay Secure.</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="auth">
+        <button class="btn btn-outline" id="loginBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7"/></svg>
+          Login
+        </button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <span class="chip">About VERIFAI</span>
+      <h1>A Safer Internet <span>for Everyone</span></h1>
+      <p>VERIFAI is a simple and reliable platform that helps people spot misleading digital content and protect themselves from online scams.</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="panel">
+          <div>
+            <span class="eyebrow">Our Mission</span>
+            <h2>Think Safe. Stay Secure.</h2>
+            <p>Fake images, scam messages and phishing emails are getting harder to recognise. We built VERIFAI so anyone, not just tech experts, can check what they see online before they trust it or click on it.</p>
+            <p>Our tools use smart analysis to give quick and clear results, so you always know what to do next.</p>
+          </div>
+          <div class="stat-row">
+            <div class="stat"><strong>3</strong><span>Powerful tools</span></div>
+            <div class="stat"><strong>Seconds</strong><span>To get results</span></div>
+            <div class="stat"><strong>Simple</strong><span>Clean interface</span></div>
+            <div class="stat"><strong>Private</strong><span>We don't store your data</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features" style="padding-top:8px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What We Offer</span>
+          <h2>Our Tools</h2>
+          <p>Three powerful tools to help you stay safe online.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card card-blue">
+            <div class="icon-box icon-blue">🖼️</div>
+            <h3>AI Image Verification</h3>
+            <p>Check if an image is genuine or AI generated.</p>
+          </div>
+          <div class="card card-purple">
+            <div class="icon-box icon-purple">💬</div>
+            <h3>SMS Scam Detector</h3>
+            <p>Detect suspicious and fraudulent SMS messages.</p>
+          </div>
+          <div class="card card-green">
+            <div class="icon-box icon-green">✉️</div>
+            <h3>Email Phishing Detector</h3>
+            <p>Check for phishing attempts in your emails.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">How It Works</span>
+          <h2>Three Simple Steps</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card"><div class="step-num">1</div><h3>Choose a tool</h3><p>Pick image, SMS or email checking depending on what you want to verify.</p></div>
+          <div class="card"><div class="step-num">2</div><h3>Add your content</h3><p>Upload an image or paste the message or email text.</p></div>
+          <div class="card"><div class="step-num">3</div><h3>Get clear results</h3><p>Click Analyse and see a quick, easy to understand result.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px;">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Values</span>
+          <h2>What We Stand For</h2>
+        </div>
+        <div class="grid-3">
+          <div class="card"><h3>Simple &amp; Easy to Use</h3><p>Clean interface with no unnecessary complications.</p></div>
+          <div class="card"><h3>Fast Analysis</h3><p>Get results in seconds, whenever you need them.</p></div>
+          <div class="card"><h3>Your Privacy Matters</h3><p>We don't store your personal data.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:8px;">
+      <div class="container">
+        <div class="cta">
+          <h2>Ready to check something?</h2>
+          <p>Verify images, messages and emails in just a few clicks.</p>
+          <a href="index.html" class="btn btn-primary">Open a Tool</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="index.html" class="logo">
+          <svg viewBox="0 0 34 38" fill="none"><path d="M17 2 3 7v10c0 9 6 16 14 19 8-3 14-10 14-19V7L17 2Z" fill="#e8efff" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/><path d="m11 18 4.5 4.5L23 14" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="logo-text"><strong>VERIFAI</strong><span>Think Safe. Stay Secure.</span></div>
+        </a>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="index.html#features">Features</a>
+          <a href="contact.html">Contact</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+        </nav>
+        <div class="socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 VERIFAI. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="auth.js"></script>
+</body>
+</html>

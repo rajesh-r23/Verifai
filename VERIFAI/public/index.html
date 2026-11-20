@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VERIFAI– Think Safe. Stay Secure.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/images/VerifaiLogo.webp"/>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <svg class="logo-icon" viewBox="0 0 48 54" fill="none">
+          <path d="M24 3 5 10v15c0 13 8 21 19 26 11-5 19-13 19-26V10L24 3Z" fill="#1f5fe0"/>
+          <path d="M24 9 11 14v11c0 9.5 5.5 15.500 13 19.500C31.500 40.500 37 34.500 37 25V14L24 9Z" fill="#eaf1ff"/>
+          <path d="m17 26 5 5 10-11" stroke="#1f5fe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="logo-title">VERIFAI</span>
+          <span class="logo-sub">Think Safe. Stay Secure.</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#home" class="active">Home</a>
+        <a href="#features">Features</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="auth">
+        <button class="btn btn-outline" id="loginBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.400 3.600-7 8-7s8 2.600 8 7"/></svg>
+          Login
+        </button>
+        <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HERO ================= -->
+    <section class="hero container" id="home">
+      <div class="hero-text">
+        <span class="pill">Your Digital Safety Partner</span>
+        <h1>Stay Safe in the <span class="blue">Digital World</span></h1>
+        <p>Verify images, detect scam messages and identify phishing emails with our AI-powered analysis tools.</p>
+        <button class="btn btn-primary btn-lg" id="watchBtn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg>
+          Watch How It Works
+        </button>
+      </div>
+
+      <div class="hero-visual">
+        <!-- Hero video -->
+        <video class="hero-video" autoplay muted loop playsinline>
+          <source src="assets/vedios/AI_Shield_10s_16x9.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <button class="play-btn" id="playBtn" aria-label="Play video">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="#0f1d4d"><path d="M7 4l13 8-13 8z"/></svg>
+        </button>
+        <span class="handwritten tagline">Smarter<br/>Safer<br/>Together</span>
+      </div>
+    </section>
+
+    <!-- ================= TOOLS ================= -->
+    <section class="tools container" id="features">
+      <div class="section-head">
+        <span class="eyebrow line">OUR TOOLS</span>
+        <h2>Choose What You Want to Check</h2>
+        <p>Three powerful tools to help you stay safe online.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card blue">
+          <div class="tool-icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.800" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2.500"/><circle cx="9" cy="10" r="1.800" fill="#fff"/><path d="m4 18 5-5 4 4 3-3 4 4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="tool-body">
+            <h3>AI Image Verification</h3>
+            <p>Check if an image is genuine or AI generated.</p>
+            <button class="btn btn-primary btn-sm open-tool" data-tool="AI Image Verification">Open Tool <span>&rarr;</span></button>
+          </div>
+          <span class="corner"><i>&rarr;</i></span>
+        </article>
+
+        <article class="tool-card purple">
+          <div class="tool-icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="#fff"><path d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9l-5 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><circle cx="8" cy="10.500" r="1.200" fill="#6d28d9"/><circle cx="12" cy="10.500" r="1.200" fill="#6d28d9"/><circle cx="16" cy="10.500" r="1.200" fill="#6d28d9"/></svg>
+          </div>
+          <div class="tool-body">
+            <h3>SMS Scam Detector</h3>
+            <p>Detect suspicious and fraudulent SMS messages.</p>
+            <button class="btn btn-purple btn-sm open-tool" data-tool="SMS Scam Detector">Open Tool <span>&rarr;</span></button>
+          </div>
+          <span class="corner"><i>&rarr;</i></span>
+        </article>
+
+        <article class="tool-card green">
+          <div class="tool-icon">
+            <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.800" stroke-linejoin="round"><rect x="2.500" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 7 9-7" stroke-linecap="round"/></svg>
+          </div>
+          <div class="tool-body">
+            <h3>Email Phishing Detector</h3>
+            <p>Check for phishing attempts in your emails.</p>
+            <button class="btn btn-green btn-sm open-tool" data-tool="Email Phishing Detector">Open Tool <span>&rarr;</span></button>
+          </div>
+          <span class="corner"><i>&rarr;</i></span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="about" id="about">
+      <div class="container about-inner">
+        <div class="about-art">
+          <!-- Simple illustration -->
+          <img src="assets/images/safer_internet_for_everyone_v2.webp" alt="Illustration" class="illustration">
+        </div>
+
+        <div class="about-text">
+          <span class="eyebrow">ABOUT OUR PLATFORM</span>
+          <h2>A Safer Internet for Everyone</h2>
+          <p>VERIFAI is a simple and reliable platform built to help users identify potentially misleading digital content and protect themselves from online scams. Our tools use smart analysis to give you quick and clear results.</p>
+          <a href="about.html" class="btn btn-outline btn-sm">Learn More <span>&rarr;</span></a>
+        </div>
+
+        <ul class="about-points">
+          <li>
+            <span class="pt-icon blue-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1f5fe0" stroke-width="2" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.500 8 8 9 4.500-1 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round"/></svg>
+            </span>
+            <div><h4>Simple &amp; Easy to Use</h4><p>Clean interface, no unnecessary complications.</p></div>
+          </li>
+          <li>
+            <span class="pt-icon purple-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#6d28d9"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg>
+            </span>
+            <div><h4>Fast Analysis</h4><p>Get results in seconds.</p></div>
+          </li>
+          <li>
+            <span class="pt-icon green-bg">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#16a34a"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="#16a34a" stroke-width="2"/></svg>
+            </span>
+            <div><h4>Your Privacy Matters</h4><p>We don't store your personal data.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= FEEDBACK ================= -->
+    <section class="feedback container" id="contact">
+      <span class="eyebrow">USER FEEDBACK</span>
+      <h2>What Our Users Say</h2>
+      <p>Your feedback helps us improve and make our tools better for everyone.</p>
+      <div class="feedback-marquee">
+        <div class="feedback-track" id="feedbackTrack">
+          <div class="feedback-group">
+            <article class="feedback-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f5fe0" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1Z"/><path d="M8 9h8M8 12.5h5" stroke-linecap="round"/></svg>
+              <div class="feedback-content"><p>"VERIFAI makes it easy to identify suspicious messages and potential online scams. A very useful tool for staying safe online!"</p><span class="user">– Priya MS.</span></div>
+            </article>
+            <article class="feedback-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f5fe0" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1Z"/><path d="M8 9h8M8 12.5h5" stroke-linecap="round"/></svg>
+              <div class="feedback-content"><p>"VERIFAI is a great tool for detecting potential online threats. Its fast analysis and easy-to-understand results make digital safety much simpler!"</p><span class="user">– Sneha P.</span></div>
+            </article>
+            <article class="feedback-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f5fe0" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1Z"/><path d="M8 9h8M8 12.5h5" stroke-linecap="round"/></svg>
+              <div class="feedback-content"><p>"A promising AI-powered security platform! I especially like having multiple threat detection features in one place."</p><span class="user">– Rahul R.</span></div>
+            </article>
+            <article class="feedback-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f5fe0" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1Z"/><path d="M8 9h8M8 12.5h5" stroke-linecap="round"/></svg>
+              <div class="feedback-content"><p>"The email and image threat detection features are really helpful. VERIFAI gives me more confidence when dealing with unknown links and messages."</p><span class="user">– Divya A.</span></div>
+            </article>
+            <article class="feedback-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1f5fe0" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H9l-5 4V5a1 1 0 0 1 1-1Z"/><path d="M8 9h8M8 12.5h5" stroke-linecap="round"/></svg>
+              <div class="feedback-content"><p>"I like how quickly VERIFAI analyzes suspicious SMS messages. The interface is simple, clean, and beginner-friendly."</p><span class="user">– Alex R.</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo light">
+        <svg class="logo-icon" viewBox="0 0 48 54" fill="none">
+          <path d="M24 3 5 10v15c0 13 8 21 19 26 11-5 19-13 19-26V10L24 3Z" fill="#1f5fe0"/>
+          <path d="M24 9 11 14v11c0 9.500 5.500 15.500 13 19.500C31.500 40.500 37 34.500 37 25V14L24 9Z" fill="#eaf1ff"/>
+          <path d="m17 26 5 5 10-11" stroke="#1f5fe0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <span class="logo-title">VERIFAI</span>
+          <span class="logo-sub">Think Safe. Stay Secure.</span>
+        </div>
+      </a>
+
+      <nav class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="about.html">About</a>
+        <a href="#features">Features</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+      </nav>
+
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4ZM2.500 9h3v12h-3V9Zm5.500 0h2.900v1.600c.5-.9 1.700-1.900 3.500-1.900 3.600 0 4.100 2.300 4.100 5.300V21h-3v-6c0-1.400 0-3.200-2-3.200s-2.300 1.500-2.300 3.100V21H8V9Z"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M22 8.200a3 3 0 0 0-2.100-2.100C18 5.600 12 5.600 12 5.600s-6 0-7.900.5A3 3 0 0 0 2 8.200 31 31 0 0 0 1.600 12 31 31 0 0 0 2 15.800a3 3 0 0 0 2.100 2.100c1.900.5 7.900.5 7.900.5s6 0 7.900-.5a3 3 0 0 0 2.100-2.100c.3-1.200.4-2.500.4-3.800s-.1-2.600-.4-3.800ZM10 15V9l5 3-5 3Z"/></svg></a>
+      </div>
+    </div>
+    <div class="container copyright">
+      &copy; <span id="year">2026</span> VERIFAI. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- ================= MODAL ================= -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <h3 id="modalTitle">Title</h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
