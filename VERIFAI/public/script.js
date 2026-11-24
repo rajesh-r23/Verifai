@@ -35,6 +35,14 @@ function openModal(title, html) {
 function closeModal() {
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
+
+const video = document.getElementById('verifaiVideo');
+
+if (video) {
+  video.pause();
+  video.currentTime = 0;
+}
+
 }
 $('#modalClose').addEventListener('click', closeModal);
 modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
@@ -105,15 +113,29 @@ window.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
 // ============ HERO VIDEO ============
 function showVideo() {
   openModal('How VERIFAI Works', `
-    <p style="margin-bottom:12px">1. Choose a tool &nbsp;→&nbsp; 2. Paste or upload your content &nbsp;→&nbsp; 3. Get a clear result in seconds.</p>
-    <!-- Replace the src below with your own video URL -->
-    <div style="aspect-ratio:16/9;background:#0f1d4d;border-radius:10px;display:grid;place-items:center;color:#fff">
-      Add your demo video here
-    </div>`);
+    <p style="margin-bottom:12px">
+      1. Choose a tool &nbsp;→&nbsp;
+      2. Paste or upload your content &nbsp;→&nbsp;
+      3. Get a clear result in seconds.
+    </p>
+
+    <div style="aspect-ratio:16/9;background:#0f1d4d;border-radius:10px;overflow:hidden">
+      <video
+        id="verifaiVideo"
+        autoplay
+        playsinline
+        style="width:100%;height:100%;object-fit:contain;border-radius:10px"
+      >
+        <source src="assets/vedios/VERIFAI_Tutorial_.mp4" type="video/mp4">
+      </video>
+    </div>
+  `);
 }
+
 $('#watchBtn').addEventListener('click', showVideo);
 
 // ============ TOOLS ============
