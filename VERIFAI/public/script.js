@@ -1,6 +1,7 @@
 // ============ HELPERS ============
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
+const API_BASE_URL = "https://verifai-backend-dun.vercel.app/";
 
 // ============ FOOTER YEAR ============
 $('#year').textContent = new Date().getFullYear();
@@ -189,7 +190,7 @@ async function bindAnalyse(type) {
 
         try {
             const response = await fetch(
-                'http://localhost:5000/api/text/analyse',
+                `${API_BASE_URL}/api/text/analyse`,
                 {
                     method: 'POST',
                     headers: {
@@ -316,7 +317,7 @@ function bindImage() {
       const formData = new FormData();
       formData.append('image', file);
 
-      const response = await fetch('http://localhost:5000/api/images/detect', {
+      const response = await fetch(`${API_BASE_URL}/api/images/detect`, {
         method: 'POST',
         body: formData
       });
