@@ -1,7 +1,7 @@
 // ============ HELPERS ============
 const $ = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
-const API_BASE_URL = "https://verifai-backend-dun.vercel.app/";
+const API_BASE_URL = "https://verifai-backend-dun.vercel.app";
 
 // ============ FOOTER YEAR ============
 $('#year').textContent = new Date().getFullYear();
